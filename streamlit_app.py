@@ -29,6 +29,7 @@ if st.button("Vote for all White Lights"):
         p = SmartPlug("192.168.1.154")
         p.update()
         p.turn_on()
+        st.write("did plug turn on")
 
 
 if st.button("Vote for Multi-Color Lights"):
