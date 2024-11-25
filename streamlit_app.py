@@ -1,7 +1,7 @@
 import streamlit as st
 import datetime
-import asyncio
-from kasa import SmartPlug
+# import asyncio
+# from kasa import SmartPlug
 
 st.write("made it here")
 
@@ -26,9 +26,9 @@ if st.button("Vote for all White Lights"):
         today = datetime.datetime.now()
         st.write(
             "Thanks, your vote was collected on: " + str(today))
-        p = SmartPlug("192.168.1.154")
-        p.update()
-        p.turn_on()
+        # p = SmartPlug("192.168.1.154")
+        # p.update()
+        # p.turn_on()
         st.write("did plug turn on")
 
 
@@ -46,4 +46,9 @@ st.write("Current White Light Count is: ")
 a
 st.write("Current Multi-Color Light Count is: ")
 b
+
+picture = st.camera_input("Take a picture")
+
+if picture:
+     st.image(picture)
 
