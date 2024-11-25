@@ -3,6 +3,8 @@ import datetime
 import asyncio
 from kasa import SmartPlug
 
+st.write("made it here")
+
 st.title(":evergreen_tree: Customize My Christmas Tree")
 st.write(
     "Which Lights do you like! Vote for your favorite below."
