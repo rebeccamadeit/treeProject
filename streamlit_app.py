@@ -24,7 +24,7 @@ if st.button("Vote for all White Lights"):
         today = datetime.datetime.now()
         st.write(
             "Thanks, your vote was collected on: " + str(today))
-        p = SmartPlug("192.168.1.30")
+        p = SmartPlug("192.168.1.154")
         p.update()
         p.turn_on()
 
