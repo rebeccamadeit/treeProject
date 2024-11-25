@@ -1,5 +1,7 @@
 import streamlit as st
 import datetime
+import asyncio
+from kasa import SmartPlug
 
 st.title(":evergreen_tree: Customize My Christmas Tree")
 st.write(
@@ -21,8 +23,11 @@ if st.button("Vote for all White Lights"):
         f.write(f"{a}")
         today = datetime.datetime.now()
         st.write(
-            "Thanks, your vote was collected on: " + str(today)
-)
+            "Thanks, your vote was collected on: " + str(today))
+        p = SmartPlug("192.168.1.30")
+        p.update()
+        p.turn_on()
+
 
 if st.button("Vote for Multi-Color Lights"):
     b += 1  
