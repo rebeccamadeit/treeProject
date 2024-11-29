@@ -33,10 +33,6 @@ if st.button("Vote for all White Lights"):
         today = datetime.datetime.now()
         st.write(
             "Thanks, your vote was collected on: " + str(today))
-        # p = SmartPlug("192.168.1.154")
-        # p.update()
-        # p.turn_on()
-        st.write("did plug turn on")
 
 
 if st.button("Vote for all Multi-Color Lights"):
@@ -59,34 +55,12 @@ if st.button("Vote for both, Mixed Lights"):
             "Thanks, your vote was collected on: " + str(today)
 )
         
-st.write("Current White Light Count is: ")
+st.write("Current all White Light vote Count is: ")
 a
-st.write("Current Multi-Color Light Count is: ")
+st.write("Current all Multi-Color Light vote Count is: ")
 b
-st.write("Current Mixed Light Count is: ")
+st.write("Current Mixed Light vote Count is: ")
 c
 
-# picture = st.camera_input("Take a picture")
-
-# if picture:
-#      st.image(picture)
 
 
-# def video_frame_callback(frame):
-
-#     # Process the video frame if needed
-
-#     img = frame.to_ndarray(format="bgr24") 
-
-#     flipped = img[::-1, :, :]
-
-#     return av.VideoFrame.from_ndarray(flipped, format="bgr24") [2, 7]
-
-
-
-# webrtc_streamer(key="video_stream", video_frame_callback=video_frame_callback) [2, 7] 
-
-# <img id="browser_video" class="video-image" alt="video" src="https://172.20.230.79:8080/video" width="50%">
-
-# VIDEO_URL = "https://172.20.230.79:8080/video"
-# st.video(VIDEO_URL)
