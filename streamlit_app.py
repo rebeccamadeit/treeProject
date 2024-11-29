@@ -1,7 +1,7 @@
 import streamlit as st
 import datetime
 
-st.title(":evergreen_tree: Customize My Christmas Tree :evergreen_tree:")
+st.title(":evergreen_tree: Customize My Christmas Tree")
 
 st.link_button("White Lights On", "https://www.virtualsmarthome.xyz/url_routine_trigger/activate.php?trigger=6900fa0d-cd72-4d66-a5eb-b70914156cb5&token=2f6f5547-f441-4b63-b13a-c064cb76660f&response=redirect&url=https%3A%2F%2Frebeccamadeit.streamlit.app")
 st.link_button("White Lights Off", "https://www.virtualsmarthome.xyz/url_routine_trigger/activate.php?trigger=eb0c7dbd-fb8a-4964-b17a-e54c8dee86d5&token=0634ae87-f27b-4121-acc4-50bc1a712beb&response=redirect&url=https%3A%2F%2Frebeccamadeit.streamlit.app")
