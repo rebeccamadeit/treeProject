@@ -1,7 +1,10 @@
 import streamlit as st
 import datetime
 # import asyncio
-# from kasa import SmartPlug
+# from kasa import 
+
+st.link_button("White Lights On", "https://www.virtualsmarthome.xyz/url_routine_trigger/activate.php?trigger=6900fa0d-cd72-4d66-a5eb-b70914156cb5&token=2f6f5547-f441-4b63-b13a-c064cb76660f&response=redirect&url=https%3A%2F%2Frebeccamadeit.streamlit.app")
+
 
 st.write("made it here")
 
