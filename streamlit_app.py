@@ -1,5 +1,6 @@
 import streamlit as st
 import datetime
+from streamlit_webrtc import webrtc_streamer
 # import asyncio
 # from kasa import 
 
@@ -50,8 +51,27 @@ a
 st.write("Current Multi-Color Light Count is: ")
 b
 
-picture = st.camera_input("Take a picture")
+# picture = st.camera_input("Take a picture")
 
-if picture:
-     st.image(picture)
+# if picture:
+#      st.image(picture)
 
+
+# def video_frame_callback(frame):
+
+#     # Process the video frame if needed
+
+#     img = frame.to_ndarray(format="bgr24") 
+
+#     flipped = img[::-1, :, :]
+
+#     return av.VideoFrame.from_ndarray(flipped, format="bgr24") [2, 7]
+
+
+
+# webrtc_streamer(key="video_stream", video_frame_callback=video_frame_callback) [2, 7] 
+
+# <img id="browser_video" class="video-image" alt="video" src="https://172.20.230.79:8080/video" width="50%">
+
+VIDEO_URL = "https://172.20.230.79:8080/video"
+st.video(VIDEO_URL)
