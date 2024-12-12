@@ -1,5 +1,6 @@
 import streamlit as st
 import datetime
+import streamlit.components.v1 as components
 
 st.title(":evergreen_tree: Customize My Christmas Tree")
 
@@ -11,3 +12,6 @@ st.write("The four Links above will control the Lights on our Christmas Tree!")
 st.write("Watch for Live streams on my YouTube channel so you can watch in nearly real time and customize the tree. We'll go live a few times this month. Thanks for checking it out.")
 
 st.link_button("YouTube - Rebecca Made It", "https://www.youtube.com/@RebeccaMadeIt")
+
+vidSrc = "https://cameraftp.com/Camera/Cameraplayer.aspx?parentID=394896942&shareID=17894049&isEmbedded=true&mode=live"
+components.iframe(vidSrc, height=500)
