@@ -13,5 +13,9 @@ st.write("Watch for Live streams on my YouTube channel so you can watch in nearl
 
 st.link_button("YouTube - Rebecca Made It", "https://www.youtube.com/@RebeccaMadeIt")
 
+st.write("If it's up and working, there is now an image feed below.")
+st.write("An image of the tree will load every minute.")
+st.write("So be patient, click one button to change the tree, then wait a minute to see if it worked!")
+
 vidSrc = "https://cameraftp.com/Camera/Cameraplayer.aspx?parentID=394896942&shareID=17894049&isEmbedded=true&mode=live"
 components.iframe(vidSrc, height=500)
