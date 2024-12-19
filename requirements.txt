@@ -1,5 +1,3 @@
 streamlit
 datetime
 # python-kasa==0.7.7
-numpy
-opencv-python-headless
