@@ -25,7 +25,7 @@ vidSrc = "https://cameraftp.com/Camera/Cameraplayer.aspx?parentID=394896942&shar
 components.iframe(vidSrc, height=500)
 
 frame_placeholder = st.empty()
-rtsp_url = "rtsp://nrb7872:me7872@192.168.1.147:8080/h264.sdp"
+rtsp_url = "rtsp://nrb7872:me7872@http://172.20.230.79:8080//h264.sdp"
 cap = cv2.VideoCapture(rtsp_url)
 ret, frame = cap.read()
 if ret is True:
