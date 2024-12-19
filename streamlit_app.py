@@ -28,7 +28,7 @@ frame_placeholder = st.empty()
 rtsp_url = "rtsp://nrb7872:me7872@192.168.1.147:8080/h264.sdp"
 cap = cv2.VideoCapture(rtsp_url)
 ret, frame = cap.read()
-frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RBG)
+frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 frame_placeholder.image(frame, channels="RGB")
 cap.release()
 
