@@ -1,6 +1,7 @@
 import streamlit as st
 import datetime
 import streamlit.components.v1 as components
+import cv2
 
 st.title(":evergreen_tree: Customize My Christmas Tree")
 
@@ -22,6 +23,11 @@ st.write("So be patient, click one button to change the tree, then wait a minute
 
 vidSrc = "https://cameraftp.com/Camera/Cameraplayer.aspx?parentID=394896942&shareID=17894049&isEmbedded=true&mode=live"
 components.iframe(vidSrc, height=500)
+
+rtsp_url = "rtsp://nrb7872:me7872@192.168.1.147:8080/h264.sdp"
+cap = cv2.VideoCapture(rtsp_url)
+ret, frame = cap.read()
+components.iframe(frame, height=500)
 
 st.write("Watch for Live streams on my YouTube channel so you can watch in nearly real time and customize the tree. We'll go live a few times this month. Thanks for checking it out.")
 

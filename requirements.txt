@@ -1,4 +1,4 @@
 streamlit
 datetime
 # python-kasa==0.7.7
-streamlit_webrtc
+cv2
